@@ -11,6 +11,6 @@ class Acronym
     words = phrase.split(" ")
     words.map do |word|
       word[0]
-    end.flatten.join("")
+    end.flatten.join("").upcase
   end
 end
