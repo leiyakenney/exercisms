@@ -6,3 +6,13 @@ To get started with TDD, see the `README.md` file in your
 `ruby/series` directory.
 =end
 
+class Series
+  def initialize(series)
+    @series = series
+  end
+
+  def slices(num_in_slice)
+    @series.split('')
+  end
+
+end
