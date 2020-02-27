@@ -12,20 +12,7 @@ class Series
     @num = num
   end
 
-  # def slices(num_in_slice)
-  #   @num.split('')
-  # end
-
-  # def slices(num_in_slice)
-  #   binding.pry
-  #   if num_in_slice <= @num.length
-  #     @num.each_cons(num_in_slice) do |array|
-  #       array.map do
-  #   end
-  # end
-
   def slices(num_in_slice)
-    # binding.pry
     unless num_in_slice <= @num.length
       raise ArgumentError.new("You can't do that!")
     end
