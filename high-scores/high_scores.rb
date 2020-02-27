@@ -20,4 +20,8 @@ class HighScores
     @scores.max
   end
 
+  def personal_top_three
+    @scores.max(3)
+  end
+
 end
