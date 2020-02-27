@@ -16,4 +16,8 @@ class HighScores
     @scores[-1]
   end
 
+  def personal_best
+    @scores.max
+  end
+
 end
