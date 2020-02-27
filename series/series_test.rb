@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'pry'
 require_relative 'series'
 
 class SeriesTest < Minitest::Test
@@ -14,7 +15,7 @@ class SeriesTest < Minitest::Test
   end
 
   def test_simple_slices_of_two
-    skip
+    # skip
     series = Series.new('01234')
     assert_equal ['01', '12', '23', '34'], series.slices(2)
   end
