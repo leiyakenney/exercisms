@@ -25,7 +25,8 @@ class Series
   # end
 
   def slices(num_in_slice)
-    unless num_in_slice <= @num.to_i
+    # binding.pry
+    unless num_in_slice <= @num.length
       raise ArgumentError.new("You can't do that!")
     end
 

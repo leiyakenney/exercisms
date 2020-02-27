@@ -84,17 +84,18 @@ class SeriesTest < Minitest::Test
   end
 
   def test_more_complicated_slice_that_blows_up
-    skip
+    # skip
     slice_string = '01032987583'
 
     series = Series.new(slice_string)
     assert_raises ArgumentError do
+      # binding.pry
       series.slices(slice_string.length + 1)
     end
   end
 
   def test_sequential_slices
-    skip
+    # skip
     series = Series.new('1234')
     assert_equal ['12', '23', '34'], series.slices(2)
     assert_equal ['123', '234'], series.slices(3)
