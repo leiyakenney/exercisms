@@ -25,6 +25,10 @@ class Series
   # end
 
   def slices(num_in_slice)
+    unless num_in_slice <= @num.to_i
+      raise ArgumentError.new("You can't do that!")
+    end
+
     @num.each_char.each_cons(num_in_slice).map(&:join)
   end
 
