@@ -5,7 +5,7 @@ class Phrase
 
   def word_count
     counts = Hash.new(0)
-    @phrase.split(" ").map do |word|
+    @phrase.split(/[\s,]/).map do |word|
       counts[word] += 1
     end
     counts
