@@ -6,3 +6,10 @@ To get started with TDD, see the `README.md` file in your
 `ruby/hamming` directory.
 =end
 
+class Hamming
+  def self.compute(str1, str2)
+    if str1 == str2
+      0
+    end 
+  end
+end
